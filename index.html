@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twill & Linen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #faf9f8;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+        }
+        .slide-in {
+            animation: slideIn 0.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-transparent z-50 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-light">TWILL & LINEN</h1>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:opacity-70">Shop</a>
+                <a href="#" class="hover:opacity-70">About</a>
+                <a href="#" class="hover:opacity-70">Contact</a>
+                <a href="#" class="hover:opacity-70"><i class="bi bi-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')">
+            <div class="hero-gradient absolute inset-0"></div>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center text-white">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl mb-4">Indulge in Fine Living with Pure Linen's</h2>
+                <p class="text-xl md:text-2xl mb-8">Comfort for Your Home</p>
+                <button class="bg-white text-black px-8 py-3 hover:bg-opacity-90">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 slide-in">
+                <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e6" alt="Bedding" class="w-full h-64 object-cover mb-4">
+                <h3 class="text-2xl mb-2">Bedding</h3>
+                <button class="border border-black px-6 py-2 hover:bg-black hover:text-white">Shop Now</button>
+            </div>
+            <div class="bg-white p-6 slide-in">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af" alt="Bath" class="w-full h-64 object-cover mb-4">
+                <h3 class="text-2xl mb-2">Bath & Towels</h3>
+                <button class="border border-black px-6 py-2 hover:bg-black hover:text-white">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="py-16 bg-[#e9e5e1]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl mb-8 text-center">Our Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af" class="w-full h-64 object-cover" alt="Product">
+                <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e6" class="w-full h-64 object-cover" alt="Product">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af" class="w-full h-64 object-cover" alt="Product">
+                <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e6" class="w-full h-64 object-cover" alt="Product">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <i class="bi bi-truck text-3xl mb-4"></i>
+                    <h3 class="text-xl">Free Shipping</h3>
+                    <p class="text-sm">On orders over $100</p>
+                </div>
+                <div>
+                    <i class="bi bi-shield-check text-3xl mb-4"></i>
+                    <h3 class="text-xl">Quality Guarantee</h3>
+                    <p class="text-sm">100% satisfaction</p>
+                </div>
+                <div>
+                    <i class="bi bi-arrow-counterclockwise text-3xl mb-4"></i>
+                    <h3 class="text-xl">Easy Returns</h3>
+                    <p class="text-sm">30-day return policy</p>
+                </div>
+                <div>
+                    <i class="bi bi-hand-thumbs-up text-3xl mb-4"></i>
+                    <h3 class="text-xl">Customer Support</h3>
+                    <p class="text-sm">24/7 assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-[#e9e5e1] py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl mb-4">Subscribe to Our Newsletter</h2>
+            <p class="mb-6">Stay updated with our latest collections and exclusive offers</p>
+            <form class="max-w-md mx-auto flex gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2">
+                <button class="bg-black text-white px-6 py-2 hover:bg-opacity-90">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl mb-4">About Us</h3>
+                <p>Luxury linen for your home comfort</p>
+            </div>
+            <div>
+                <h3 class="text-xl mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="hover:opacity-70">Shop</a></li>
+                    <li><a href="#" class="hover:opacity-70">About</a></li>
+                    <li><a href="#" class="hover:opacity-70">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl mb-4">Contact</h3>
+                <p>Email: info@twillandlinen.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div>
+                <h3 class="text-xl mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:opacity-70"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:opacity-70"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:opacity-70"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for slide-in animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.slide-in').forEach((el) => observer.observe(el));
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white', 'shadow-md');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-md');
+                nav.classList.add('bg-transparent');
+            }
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
